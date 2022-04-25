@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="./index.js"></script>
+  <title>sojeong profile</title>
+</head>
+<body>
+  <header>
+    <div class="image">
+      <img src="./images/KakaoTalk_Photo_2022-04-21-18-50-18.jpeg" alt="profile">
+    </div>
+    <div class="infodiv">
+      <ul class="topInfo">
+        <li>3</li>
+        <li id="addFollower">0</li>
+        <li>1</li>
+      </ul>
+      <ul class="topInfoName">
+        <li>게시물</li>
+        <li>팔로워</li>
+        <li>팔로잉</li>
+      </ul>
+    </div>
+    <h1>박소정</h1>
+    <h2>FE DEVELOPER</h2>
+    <p>👩🏻‍💻안녕하세요. 계속해서 성장하는 개발자가 되고 싶습니다.<br>
+    커피☕️와 여행✈️을 좋아해요<br>
+    ⬇️팔로우 부탁드려요!ㅎㅎㅎ</p>
+    <!-- follow -->
+    <ul class="follow">
+      <li id = "addFollower-btn">팔로우</li>
+      <li id = "sendMessage-btn">메세지</li>
+    </ul>
+    <!-- story -->
+    <div class="myInfo">
+      <div class="infoImage">
+        <img src="./images/IMG_8343.JPG" alt="myInfo">
+      </div>
+      <span class="myInfoTxt">My Info.</span>
+    </div>
+  </header>
+  <nav>
+    <ul class="nav">
+      <li class="nav-active"><span class="material-symbols-outlined">
+        grid_view
+        </span></li>
+      <li><span class="material-symbols-outlined">
+        movie
+        </span></li>
+      <li><span class="material-symbols-outlined">
+        person_pin
+        </span></li>
+    </ul>
+  </nav>
+  <main role="main">
+    <div class="firstLine">
+      <ul class="post">
+        <li id="showSkill"><img src="https://miro.medium.com/max/1400/1*BwJ84XJUWpPNpSKFGU8KDQ.png" alt="react"></li>
+        <li id="showExpectation"><img src="./images/IMG_0258.JPG" alt="expectation"></li>
+        <li id="showToRacer"><img src="./images/IMG_0288.JPG" alt="toRacer"></li>
+      </ul>
+    </div>
+
+  <!-- modal -->
+    <!-- skill -->
+    <div class="skill" style="display: none;">
+      <div class="content">
+        <div class="contentHeader">
+          <img src="./images/KakaoTalk_Photo_2022-04-21-18-50-18.jpeg" alt="profile">
+          <h3>박소정</h3>
+          <span class="material-symbols-outlined" id="skillClose">
+            close
+            </span>
+        </div>
+        <div class="contentImg">
+          <img src="https://miro.medium.com/max/1400/1*BwJ84XJUWpPNpSKFGU8KDQ.png" alt="react">
+        </div>
+        <ul class="contentNav">
+          <li><span class="material-symbols-outlined">
+            favorite
+            </span></li>
+          <li><span class="material-symbols-outlined">
+            send
+            </span></li>
+        </ul>
+        <div class="contentP">
+          <p><strong>관심분야 또는 기술</strong><br><br>
+        현재는 프론트엔드 개발자를 목표로 준비하고 있지만, 나중에는 풀스택 개발자로 성장하고 싶은 욕심이 있습니다. <br><br>
+        현재는 HTML, CSS, JavaScript, React 기술을 자유자재로 사용할 수 있을만큼 실력을 키우고 싶습니다. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- expectation -->
+    <div class="expectation">
+      <div class="content">
+        <div class="contentHeader">
+          <img src="./images/KakaoTalk_Photo_2022-04-21-18-50-18.jpeg" alt="profile">
+          <h3>박소정</h3>
+          <span class="material-symbols-outlined" id="exClose">
+            close
+            </span>
+        </div>
+        <div class="contentImg">
+          <img src="./images/IMG_0258.JPG" alt="expectation">
+        </div>
+        <ul class="contentNav">
+          <li><span class="material-symbols-outlined">
+            favorite
+            </span></li>
+          <li><span class="material-symbols-outlined">
+            send
+            </span></li>
+        </ul>
+        <div class="contentP">
+          <p><strong>Elice SW 트랙에서 가장 기대되는 점</strong><br><br>
+            몇 주후 진행할 팀프로젝트가 가장 기대됩니다. <br>
+            어떤 내용을 담을 프로젝트를 진행할진 알 수 없지만 거대한 프로젝트를 진행할 생각을 하니 너무 두근거리네요!!ㅎㅎ<br><br>
+            사실 비전공자인데다가 개발 공부를 시작한지 얼마되지 않아 제대로된 1인분을 할 수 있을지 걱정이 되긴 하지만 가장 기대되는 부분인 만큼 열심히 준비하고 있겠습니다!!👊</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- toRacer -->
+    <div class="toRacer" style="display: none;">
+      <div class="content">
+        <div class="contentHeader">
+          <img src="./images/KakaoTalk_Photo_2022-04-21-18-50-18.jpeg" alt="profile">
+          <h3>박소정</h3>
+          <span class="material-symbols-outlined" id="racerClose">
+            close
+            </span>
+        </div>
+        <div class="contentImg">
+          <img src="./images/IMG_0288.JPG" alt="toRacer">
+        </div>
+        <ul class="contentNav">
+          <li><span class="material-symbols-outlined">
+            favorite
+            </span></li>
+          <li><span class="material-symbols-outlined">
+            send
+            </span></li>
+        </ul>
+        <div class="contentP">
+          <p><strong>To. Elice racer</strong><br><br>
+            안녕하세요!! 만나서 반갑습니닿ㅎ<br><br>
+            온라인으로 진행되어 직접적으로 만나진 못하지만 어떻게 생각해보면 온라인이기에 지역적 차이를 넘어 여러분들을 만나 함께 개발 공부를 진행할 수 있어 기쁘네요!! 개발자가 되어 오프라인에서 만날 그 날까지 모두 화이팅입니다!! </p>
+        </div>
+      </div>
+    </div>
+
+  <!-- myInfo. -->
+      <div class="storyNav">
+        <div class="exit">
+          <span class="material-symbols-outlined" id="firstClose">
+            close
+            </span>
+        </div>
+        <div class="prevArrow">
+          <span class="material-symbols-outlined" id="prevArrow">
+            arrow_back_ios
+            </span>
+        </div>
+        <div class="nextArrow">
+          <span class="material-symbols-outlined" id="nextArrow">
+            arrow_forward_ios
+            </span>
+        </div>
+      </div>
+      <div class="storyContent">
+        <div class="firstStory active">
+          <img src="./images/IMG_0181.JPG" alt="photo">
+          <p>
+            필름카메라로 사진 찍는 것을 좋아해요!<br><br>
+            핸드폰이나 DSLR과는 또다른 즐거움이더라구요🥰<br><br>
+            이번 페이지 속의 사진들도 다 제가 직접 찍은 사진들이랍니다!
+          </p>
+        </div>
+        <div class="secondStory">
+          <img src="./images/IMG_0238.JPG" alt="photo">
+          <p>
+            저는 여행도 좋아해요!<br><br>
+            언젠가 개발자로서의 실력을 쌓아 해외를 자유롭게 여행하며<br>
+            다양한 사람들과 프로젝트를 진행해보고 싶어요<br><br>
+            해외에 못나간지 오래되었지만 곧 다시 나갈수 있겠죠?!✈️
+          </p>
+        </div>
+        <div class="thirdStory">
+          <p>
+            <span style="font-size: 80px;">📚</span><br><br><br>
+            너무 놀기만 좋아하는 뽀로로같은 사람인가 싶겠네요<br><br>
+            음... 또 다른 취미는 중국어 공부예요<br>
+            중국 친구들이 대화하는 소리가 너무 좋아서 공부를 시작했는데<br>
+            한자보다는 영어와 친했던 사람이라 그런지 잘하진 못하지만 <br>그래도 중국어 공부는 재밌어욯ㅎ
+          </p>
+        </div>
+        <div class="fourthStory">
+          <img src="./images/IMG_1550 2.jpg" alt="photo">
+          <span id="thanks">Thanks for watching!</span>
+        </div>
+      </div>
+
+  </main>
+</body>
+</html>
